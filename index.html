@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer - Big Event Coming Soon</title>
+    <meta name="description" content="Countdown timer for our upcoming big event. Don't miss out!">
+    <meta name="keywords" content="countdown, timer, event, coming soon">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Big Event Countdown">
+    <meta property="og:description" content="Something amazing is coming soon! Join our countdown.">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Big Event Countdown">
+    <meta property="twitter:description" content="Something amazing is coming soon! Join our countdown.">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⏰</text></svg>">
+    
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="script.js" as="script">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title">Big Event Countdown</h1>
+            <p class="subtitle">Something amazing is coming soon!</p>
+        </header>
+        
+        <main class="countdown-container">
+            <div class="countdown-grid" id="countdown">
+                <div class="time-card">
+                    <div class="time-value" id="days">00</div>
+                    <div class="time-label">Days</div>
+                </div>
+                
+                <div class="time-card">
+                    <div class="time-value" id="hours">00</div>
+                    <div class="time-label">Hours</div>
+                </div>
+                
+                <div class="time-card">
+                    <div class="time-value" id="minutes">00</div>
+                    <div class="time-label">Minutes</div>
+                </div>
+                
+                <div class="time-card">
+                    <div class="time-value" id="seconds">00</div>
+                    <div class="time-label">Seconds</div>
+                </div>
+            </div>
+        </main>
+        
+        <div class="completion-message hidden" id="completion">
+            <div class="completion-content">
+                <h2 class="completion-title">🎉 The Wait is Over! 🎉</h2>
+                <p class="completion-text">Thank you for joining our countdown. The big moment has arrived!</p>
+                <button class="celebration-btn" onclick="celebrate()">Celebrate!</button>
+            </div>
+        </div>
+        
+        <footer class="footer">
+            <p class="footer-text">Stay tuned for something incredible</p>
+        </footer>
+    </div>
+    
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>
